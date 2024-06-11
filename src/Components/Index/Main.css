@@ -1,0 +1,11 @@
+.image-main-div {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.main-container {
+   background-color: #8BADDE;
+}

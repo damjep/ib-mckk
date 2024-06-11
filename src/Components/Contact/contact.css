@@ -1,0 +1,37 @@
+.contact_box{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+}
+
+.address p{
+    font-style: italic;
+    margin-bottom: 0px; /* Adjust the value as needed */
+
+}
+
+.email{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.contact_box .email a{
+    color: blue;
+    padding: 0px 0px 0px 0px;
+}
+
+.contact_box .socmed a{
+    color: blue;
+}
+
+.socmed a{
+    padding: 10px;
+    padding-left: 0;
+}

@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 2em;
+    padding: 0.5em ;
+    background-color: #E02B20;
+}
+
+.phone {
+    position: relative;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 1em;
+}

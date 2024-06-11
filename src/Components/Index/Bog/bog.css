@@ -1,0 +1,36 @@
+.bog-sultan {
+    display: flex;
+    position: relative;
+    background-color: gold;
+    min-width: 100%;
+    min-height: 85vh;
+    animation-name: sultan;
+    animation-duration: 4s;
+}
+
+@keyframes sultan {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img-sultan {
+    
+    padding: 1em;
+    margin: auto;
+}
+
+.bog-chairmain {
+    display: flex;
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.img-cm {
+    padding: 1em;
+    margin: auto;
+}
