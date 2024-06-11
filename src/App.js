@@ -24,6 +24,7 @@ import { Activities } from './Components/StudentCorner/Activities/Activities';
 import { Achievement } from './Components/StudentCorner/Achievements/Achievment';
 import { Graduation } from './Components/StudentCorner/Graduation/Graduation';
 
+
 function App() {
   return (<>
     <div className="App">
