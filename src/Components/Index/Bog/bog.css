@@ -34,3 +34,34 @@
     padding: 1em;
     margin: auto;
 }
+
+.bog-grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: auto;
+    padding: 1em;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bog-grid > div {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
