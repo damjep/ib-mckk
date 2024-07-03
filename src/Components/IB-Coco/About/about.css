@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-inner {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 1em 0;
+    height: 345px;
+}

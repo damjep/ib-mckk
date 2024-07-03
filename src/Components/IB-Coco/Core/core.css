@@ -1,0 +1,15 @@
+.core-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.core-main video {
+    flex: auto;
+    width: 500px;
+}
+
+.core-div {
+    margin: 1em;
+    flex: auto;
+    max-width:45vw;
+}

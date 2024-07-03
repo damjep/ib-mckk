@@ -9,7 +9,7 @@ export const Activities = () => {
                     Laboratories Experiment
                 </Accordion.Header>
                 <Accordion.Body>
-                    <Carousel>
+                    <Carousel data-bs-theme="dark">
                         <Carousel.Item>
                             <img src={require("./assets/activities.jpg")} alt="Activities" width={"400px"}/>
                         </Carousel.Item>

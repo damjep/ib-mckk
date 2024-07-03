@@ -5,7 +5,7 @@ export const Calendar = () => {
     return (<>
     <SideBar />
     <div>
-        <Carousel>
+        <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <Image src={require("./PLANNER 2024.jpg")} fluid />
             </Carousel.Item>

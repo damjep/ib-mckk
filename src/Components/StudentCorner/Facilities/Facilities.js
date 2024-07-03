@@ -4,7 +4,7 @@ export const Facilities = () => {
     return (<>
     <div>
         <h1>Student Facilities</h1>
-        <Carousel>
+        <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <img src={require("./assets/bilik.jpg")} alt="Facilities"/>
                 <Carousel.Caption>

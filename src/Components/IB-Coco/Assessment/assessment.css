@@ -1,0 +1,17 @@
+.ass-main {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+}
+
+.ass-div {
+    flex: auto;
+    width: 50vw;
+}
+
+.ass-cont {
+    width: auto;
+    min-height: 100vh;
+    padding: 1em;
+}

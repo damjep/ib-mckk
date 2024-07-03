@@ -1,14 +1,15 @@
 import { Card, Col, Container, Row } from "react-bootstrap"
 import { SideBar } from "../sidebar"
+import "./core.css"
 
 export const Core = () => {
     return (<>
     <SideBar />
-    <div style={{display:"flex", padding: "1em", gap: "1em"}}>
+    <div className="core-main">
 
-        <Card>
+        <Card className="core-div">
             <Card.Header>
-                <video src={require("./assets/tok.mp4")} controls width="33%"/>
+                <video src={require("./assets/tok.mp4")} controls > </video>
             </Card.Header>
             <Card.Body>
                 <Card.Title>Theory Of Knowledge</Card.Title>
@@ -18,9 +19,9 @@ export const Core = () => {
             </Card.Body>
         </Card>
 
-        <Card>
+        <Card className="core-div">
             <Card.Header>
-                <video src={require("./assets/ee.mp4")} controls width="33%" />
+                <video src={require("./assets/ee.mp4")} controls />
             </Card.Header>
             <Card.Body>
                 <Card.Title>The Extended Essay</Card.Title>
@@ -29,10 +30,11 @@ export const Core = () => {
                 </Card.Text>
             </Card.Body>
         </Card>
-
-        <Card>
+</div>
+<div className="core-main">
+    <Card className="core-div">
             <Card.Header>
-                <video src={require("./assets/cas.mp4")} controls width="33%"/>
+                <video src={require("./assets/cas.mp4")} controls/>
             </Card.Header>
             <Card.Body>
                 <Card.Title>CAS</Card.Title>
@@ -41,7 +43,9 @@ export const Core = () => {
                 </Card.Text>
             </Card.Body>
         </Card>
+</div>
+        
 
-    </div>
+    
     </>)
 }

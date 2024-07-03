@@ -1,0 +1,19 @@
+.learner-carousel {
+   justify-content: center;
+   display: flex;
+   margin: auto;
+}
+
+.learner-main {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.learner-card {
+    position: relative;
+    display: flex;
+    margin: 1em;
+    width: auto;
+    height: auto;
+}

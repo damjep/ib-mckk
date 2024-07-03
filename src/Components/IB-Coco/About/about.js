@@ -1,44 +1,50 @@
 import { Card, Container, Row, Col } from "react-bootstrap"
 import {FaMedapps} from "@react-icons/all-files/fa/FaMedapps"
+import {GiBullseye} from "@react-icons/all-files/gi/GiBullseye"
+import {FaQuestion} from "@react-icons/all-files/fa/FaQuestion"
 import { SideBar } from "../sidebar"
+import "./about.css"
 
 export const About = () => {
     return (<>
     <SideBar />
         <div>
-            <Container>
-                <Row>
-                    <Col>
-                        <Card >
-                            <Card.Header>
-                                <Card.Img as={FaMedapps} variant="top" size={50} />
-                            </Card.Header>
-                            <Card.Body>
-                                <Card.Title>Mission</Card.Title>
-                                <Card.Text>The MCKK IB Diploma Programme aims to develop students of character who will be independent lifelong learners, in keeping with the college’s quest for overall excellence in producing responsible leaders who uphold traditional values and national aspirations, towards creating a productive and peaceful global future</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+            <Container >
+                <div className="main">
+                    <Row className="main-inner">
+                        <Col>
+                            <Card >
+                                <Card.Header style={{width: '100%'}}>
+                                    <Card.Img as={GiBullseye} variant="top" size={50} />
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>Mission</Card.Title>
+                                    <Card.Text>The MCKK IB Diploma Programme aims to develop students of character who will be independent lifelong learners, in keeping with the college’s quest for overall excellence in producing responsible leaders who uphold traditional values and national aspirations, towards creating a productive and peaceful global future</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Header style={{width: '100%'}}>
+                                    <Card.Img as={FaQuestion} variant="top" size={50} />
+                                </Card.Header>
+                                <Card.Body>
+                                    <Card.Title>What Is IBDP Programme ?</Card.Title>
+                                    <Card.Text>The International Baccalaureate or IB Diploma Programme (DP) is recognised by the most prestigious universities in the world and is aimed at students aged 16-19. Its main objective is to help students acquire breadth and depth of knowledge, allowing them to become intellectually and emotionally prepared in order to build a better world. The DP is based on research, concept understanding, teamwork and efficient cooperation. It develops in local and global contexts, is aimed towards meeting all students’ needs and follows a formative and summative assessment.</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
+                
 
                 <Row>
                     <Col>
                         <Card>
-                            <Card.Header>
-                                <Card.Img as={FaMedapps} variant="top" size={50} />
-                            </Card.Header>
-                            <Card.Body>
-                                <Card.Title>What Is IBDP Programme ?</Card.Title>
-                                <Card.Text>The International Baccalaureate or IB Diploma Programme (DP) is recognised by the most prestigious universities in the world and is aimed at students aged 16-19. Its main objective is to help students acquire breadth and depth of knowledge, allowing them to become intellectually and emotionally prepared in order to build a better world. The DP is based on research, concept understanding, teamwork and efficient cooperation. It develops in local and global contexts, is aimed towards meeting all students’ needs and follows a formative and summative assessment.</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col>
-                        <Card>
-                            <Card.Header>
+                            <Card.Header style={{width: '100%'}}>
                                 <Card.Img as={FaMedapps} variant="top" size={50} />
                             </Card.Header>
                             <Card.Body>

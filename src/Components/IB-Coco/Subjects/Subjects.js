@@ -1,18 +1,22 @@
 import { SideBar } from "../sidebar"
 import { Accordion, Card, Image } from "react-bootstrap"
+import './subjects.css'
 
 export const Subject = () => {
     return(<>
     <SideBar />
-    <C10 />
-    <SubjectGroup />
+    <div className="subjects-container">
+        <C10 />
+        <SubjectGroup />
+    </div>
+   
     <Subjects />
     </>)
 }
 
 const SubjectGroup = () => {
     return(<>
-        <div>
+        <div className="subjects-div">
             <h1>What Do We Study ?</h1>
             <h2>Subject Groups</h2>
             <p>In the International Baccalaureate Diploma Programme, students choose one subject from each of the six subject groups:</p>
@@ -36,8 +40,8 @@ const SubjectGroup = () => {
 
 const C10 = () => {
     return (<>
-    <div>
-        <Image src={require("./C10 - 2.JPG")} alt="C10" fluid />
+    <div className="subjects-div">
+        <Image src={require("./C10 - 2.JPG")} alt="C10" fluid/>
     </div>
     </>)
 }
@@ -45,8 +49,9 @@ const C10 = () => {
 const Subjects = () => {
     return (<>
     <h1>Subjects We Offer</h1>
-    <div>
-        <Card>
+    
+    <div className="subjects-main">
+        <Card className="subjects-card">
             <Card.Header>
             Studies in Language and Literature
             </Card.Header>
@@ -64,7 +69,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card>
+        <Card className="subjects-card">
             <Card.Header>
                 Languae Acquisition
             </Card.Header>
@@ -82,7 +87,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card>
+        <Card className="subjects-card">
             <Card.Header>
                 Individual and Societies
             </Card.Header>
@@ -121,8 +126,10 @@ const Subjects = () => {
                 </Accordion>
             </Card.Body>
         </Card>
+    </div>
 
-        <Card>
+    <div className="subjects-main">
+        <Card className="subjects-card">
             <Card.Header>
                 Sciences
             </Card.Header>
@@ -173,7 +180,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card>
+        <Card className="subjects-card">
             <Card.Header>
                 Mathematics
             </Card.Header>
@@ -191,7 +198,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card>
+        <Card className="subjects-card">
             <Card.Header>
                 The Arts
             </Card.Header>

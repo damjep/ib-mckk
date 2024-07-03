@@ -1,0 +1,39 @@
+.subjects-main {
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+}
+
+.subjects-card {
+    flex: auto;
+    margin: auto;
+    width: 500px;
+    height: 310px;
+}
+
+.subjects-container {
+    display: flex;
+    min-height: 90vh;
+    gap: 1em;
+    padding: 1em;
+}
+
+.subjects-div {
+    flex: auto;
+    margin: auto;
+}
+
+.subjects-div h2 , .subjects-div p {
+    text-align: left;
+}
+
+.subjects-div a {
+    color: brown;
+}
+
+.subjects-div a:hover {
+    color: black;
+}
+.subjects-div img{
+    max-width: 56vw;
+}
