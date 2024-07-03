@@ -1,0 +1,13 @@
+.t-1 {
+    min-width: auto;
+    min-height: 100vh;
+    display: flex;
+}
+
+.t-2 {
+    min-width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+

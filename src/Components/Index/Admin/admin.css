@@ -1,0 +1,12 @@
+.admin-principal {
+    min-width: auto;
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin-rest {
+    min-width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

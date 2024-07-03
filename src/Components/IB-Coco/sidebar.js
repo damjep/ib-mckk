@@ -9,7 +9,7 @@ export const SideBar = () => {
     return(<>
         <span id="coco" onMouseEnter={() => setShow(true)}></span>
 
-        <div>
+        <div >
             <Offcanvas show={show} onHide={() => setShow(!show)}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
@@ -17,7 +17,7 @@ export const SideBar = () => {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
 
-                <Offcanvas.Body>
+                <Offcanvas.Body className="coco-sidebar">
                     <button>
                         <Link to="/About">
                             About Us
