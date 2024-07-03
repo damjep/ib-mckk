@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ibdpmckk/repositories/ib-mckk/public-html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
