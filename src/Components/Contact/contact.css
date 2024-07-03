@@ -35,3 +35,19 @@
     padding: 10px;
     padding-left: 0;
 }
+
+.contact-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.contact-div {
+    margin: auto;
+    justify-content: center;
+    max-width: 50vw;
+    justify-content: center;
+}

@@ -7,11 +7,11 @@ import { Resend } from "resend";
 export const Contact = () =>{
     return (<>
     <Container>
-        <Row>
-            <Col>
+        <Row className="contact-cont">
+            <Col className="contact-div">
                 <GoogleMap />
             </Col>
-            <Col>
+            <Col className="contact-div">
                 <FormContact />
             </Col>
         </Row>
@@ -24,10 +24,10 @@ function FormContact () {
     const [message, setMessage] = useState("");
 
     async function sendEmail() {
-        const resend = new Resend('re_Hbhh1VhB_LsbSrHeQ7Umce39HaXrPqsVi');
+        const resend = new Resend('re_ca1MkxdJ_6rXMX4wqmoMX9mStPcckxAFv');
 
         await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: {email},
             to: 'adamjeff143@gmail.com',
             subject: 'Hello World',
             text: 'Hello World'
@@ -37,7 +37,7 @@ function FormContact () {
     return (<>
         <Form>
             <Form.Group>
-                <Form.Label>Email</Form.Label>
+                <Form.Label>Email us for a faster response !</Form.Label>
                 <Form.Control type="email" placeholder="email@example.com" onChange={(e) => {setEmail(e.target.value)}} isValid={email.includes("@")} isInvalid={!email.includes("@")}/>
                 {email}
             </Form.Group>
