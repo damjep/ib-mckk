@@ -2,6 +2,7 @@
   "name": "ib-mckk",
   "version": "0.1.0",
   "private": true,
+  "homepage": "ibdpmckk.com/",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@react-pdf-viewer/core": "^3.12.0",
