@@ -1,0 +1,11 @@
+.achieve-cont {
+    display: flex;
+    min-height: 90vh;
+}
+
+.achieve-div {
+    flex: auto;
+    min-width: none;
+    width: 40vw;
+    padding: 1em;
+}

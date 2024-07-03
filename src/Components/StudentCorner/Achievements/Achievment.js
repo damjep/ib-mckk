@@ -1,16 +1,20 @@
 import { Accordion, Col, Container, Row } from "react-bootstrap"
 import { Data } from "./CohortAlumni"
+import './styles.css'
 
 export const Achievement = () => {
     return (<>
-    <div>
-        <h1>Our Achievement</h1>
-        <img src={require("./Result 2022.jpeg")} alt="Achievements" width={"50%"}/>
-    </div>
+    <div className="achieve-cont">
+        <div className="achieve-div">
+            <h1>Our Achievement</h1>
+            <img src={require("./Result 2022.jpeg")} alt="Achievements" className="img" width='90%'/>
+        </div>
 
-    <div>
-        <HighAchievers />
+        <div className="achieve-div">
+            <HighAchievers />
+        </div>
     </div>
+    
     </>)
 }
 
