@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ibdpmckk/repositories/ib-mckk/public-html/
+    - export DEPLOYPATH=/home/ibdpmckk/repositories/ib-mckk/build/
     - /bin/cp index.html $DEPLOYPATH
