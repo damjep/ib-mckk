@@ -1,15 +1,22 @@
 import { Container, Row, Col, ListGroup, Accordion } from "react-bootstrap"
+import { Modal } from "react-bootstrap"
+import './styles.css'
+import { useState } from "react"
 
 export const Admission = () => {
+    const [show, setShow] = useState(false)
+    const handleClose = () => setShow(false)
+    const handleOpen = () => setShow(true)
+
     return (<>
-    <div>
-        <Container>
-            <Row>
+    <div className="admis-cont">
+        <Container className="admission">
+            <Row className="admission-div">
                 <Col>
                 <div>
                     <h1>Why Should You Choose Us?</h1>
-                    <p>The International Baccalaureate Diploma Programme (IBDP) at the Malay College Kuala Kangsar (MCKK) offers a comprehensive curriculum package that develops academic potentials as well as personal and social attributes of our students. The programme allows a maximum flexibility and students can play to their strengths while maintaining a balance of subjects taken.</p>
-                    <ListGroup>
+                    <p style={{textAlign: 'left'}}>The International Baccalaureate Diploma Programme (IBDP) at the Malay College Kuala Kangsar (MCKK) offers a comprehensive curriculum package that develops academic potentials as well as personal and social attributes of our students. The programme allows a maximum flexibility and students can play to their strengths while maintaining a balance of subjects taken.</p>
+                    <ListGroup className="admis-group">
                         <ListGroup.Item>Internationally trained academic members</ListGroup.Item>
                         <ListGroup.Item> IBDP graduates are more likely to be enrolled at top higher education institutions than entrants holding other qualifications</ListGroup.Item>
                         <ListGroup.Item> Strong international links and global partnerships </ListGroup.Item>
@@ -19,7 +26,7 @@ export const Admission = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="admission-div">
                 <Col>
                     <h1>Admission Requirements</h1>
                     <Accordion>
@@ -50,14 +57,32 @@ export const Admission = () => {
                     </Accordion>
                 </Col>
             </Row>
+
+            
         </Container>
         
-        <button  title="PDF">
-            <a href={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} > Apply Now ! </a>
-        </button>
-        <button title="Prospectus">
-            <a href={require("./Prospectus April 2020.pdf")} > View Our Prospectus </a>
-        </button>
+        <div className="admis-button">
+            <button  title="PDF" onClick={handleOpen}>
+            </button>
+            <button  title="PDF">
+                <a href={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} > Apply Now ! </a>
+            </button>
+            <button title="Prospectus">
+                <a href={require("./Prospectus April 2020.pdf")} > View Our Prospectus </a>
+            </button>
+        </div>
+        
+
+        <Modal size="lg" show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title> Apply by Downloading and Fill the PDF</Modal.Title>
+            </Modal.Header>
+
+            <Modal.Body>
+                <iframe src={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} width='100%'>
+                </iframe>
+            </Modal.Body>
+        </Modal>
     </div>
     </>)
 }

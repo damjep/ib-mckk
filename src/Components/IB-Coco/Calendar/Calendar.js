@@ -4,7 +4,7 @@ import { SideBar } from "../sidebar"
 export const Calendar = () => {
     return (<>
     <SideBar />
-    <div>
+    <div style={{maxWidth: '90vw', margin: 'auto'}}>
         <Carousel data-bs-theme="dark">
             <Carousel.Item>
                 <Image src={require("./PLANNER 2024.jpg")} fluid />

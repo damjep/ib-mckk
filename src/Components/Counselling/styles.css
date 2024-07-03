@@ -1,2 +1,23 @@
-div.nav {
+.support-main {
+    display: flex;
+    gap: 1em;
+    padding: 2em;
+}
+
+.support-div {
+    flex: auto;
+    max-width: 50vw;
+}
+
+.support-div p {
+    text-align: left;
+}
+
+.support {
+    max-width: 70vw;
+    margin: auto;
+}
+
+.support p {
+    text-align: left;
 }

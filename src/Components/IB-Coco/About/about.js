@@ -8,7 +8,7 @@ import "./about.css"
 export const About = () => {
     return (<>
     <SideBar />
-        <div>
+        <div className="about-cont">
             <Container >
                 <div className="main">
                     <Row className="main-inner">

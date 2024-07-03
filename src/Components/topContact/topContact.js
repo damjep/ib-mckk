@@ -5,7 +5,7 @@ import "./topContact.css"
 export default function Top() {
     return (
         <>
-            <div className="nav">
+            <div className="nav-top">
                 {/** Phone */}
                 <div className="phone">
                     <FaPhone size={"15"} color="#FFFFFF"/>

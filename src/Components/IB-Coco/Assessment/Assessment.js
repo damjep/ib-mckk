@@ -12,8 +12,9 @@ export const Assessment = () => {
                     Assessment
                 </Card.Header>
                 <Card.Body>
+                <p>
                 IB Diploma students must take a prescribed set of subjects to achieve the IB diploma. Achievement in the overall diploma is described by a points score whose maximum is 45. Core subjects (CAS, TOK and EE) contribute up to three points to overall diploma outcome via a points matrix. Most subjects have multiple components which cover both external and internal assessment. Nearly all subjects are available at standard level (SL) or higher level (HL), and contribute equally to the overall diploma outcome. The overall diploma points are calculated by adding together the grades (1 up to 7) achieved from each of the six subjects and then including between zero and three points from the core.
-                </Card.Body>
+                </p></Card.Body>
             </Card>
         </div>
         <div className="ass-main">
@@ -36,8 +37,9 @@ export const Assessment = () => {
                 </Card.Header>
                 <Card.Body>
                 <Card.Img src={require("./core_points.jpg")} />
+                <p>
                 Unlike the other subjects, theory of knowledge (TOK) and the extended essay (EE) are graded from A to E. The third element of the core, CAS, does not receive a grade as it would not be meaningful to evaluate performance in this area. The core is worth between zero and three points towards the overall diploma points. The candidate can also fail to achieve the diploma certificate if they obtain a grade E in either TOK or EE or if they do not complete CAS.
-                </Card.Body>
+                </p></Card.Body>
             </Card>
         </div>
     </div>

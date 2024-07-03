@@ -10,6 +10,9 @@
     width: 50vw;
 }
 
+.ass-div p {
+    text-align: left;
+}
 .ass-cont {
     width: auto;
     min-height: 100vh;

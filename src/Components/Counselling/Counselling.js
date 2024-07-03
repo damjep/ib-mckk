@@ -1,11 +1,12 @@
 import { Tab, Tabs } from "react-bootstrap"
 import { Support } from "./StudentSupport/Support"
 import { Guide } from "./UniGuide/Guide"
+import './styles.css'
 
 export const Counselling = () => {
     return (<>
     <div>
-       <Tabs>
+       <Tabs data-bs-theme="dark" fill>
         <Tab eventKey={"Support"} title="Support">
             <Support />
         </Tab>
