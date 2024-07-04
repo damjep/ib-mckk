@@ -41,16 +41,6 @@ export const NavBar = () => {
                             </Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/Contact">
-                                Contact
-                            </Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link as={Link} to="/Achievement">
-                                Achievement
-                            </Nav.Link>
-                        </Nav>
-                        <Nav>
                             <Nav.Link as={Link} to="/Student">
                                 Student's Corner
                             </Nav.Link>
@@ -65,6 +55,11 @@ export const NavBar = () => {
                                     Graduation
                                 </NavDropdown.Item>
                             </NavDropdown>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link as={Link} to="/Contact">
+                                Contact
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

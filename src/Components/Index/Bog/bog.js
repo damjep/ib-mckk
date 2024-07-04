@@ -16,7 +16,7 @@ export const Bog = () => {
         <div className="bog-sultan" onChange={() => ScrollToSection("cm")}>
             <div className="img-sultan">
                 <img src={require("./assets/sultan_nazrin.png")} alt="Royal Patreon"/>
-                <h1>His Royal Higness, Sultan Nazrin Muizzudin Shah</h1>
+                <h1>His Royal Highness, Sultan Nazrin Muizzudin Shah</h1>
                 <h4>Royal Patron</h4>
             </div>
             <Arrow onClick={() => ScrollToSection("cm")}/>
