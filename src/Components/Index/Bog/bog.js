@@ -1,4 +1,4 @@
-import {Row, Container, Col} from "react-bootstrap"
+import {Row, Col} from "react-bootstrap"
 import "./bog.css"
 import { FaArrowDown as Arrow} from "@react-icons/all-files/fa/FaArrowDown";
 
@@ -10,16 +10,25 @@ export const Bog = () => {
         }       
     }
 
+    const hidden = () => {
+        document.getElementById("arrow1").style.display = "hidden";
+    }
+
+    const Scroll2 = () => {
+        window.scrollTo(0,1000)
+    }
+
     return (<>
     <div>
         <h2>Board of Governors</h2>
-        <div className="bog-sultan" onChange={() => ScrollToSection("cm")}>
+        <div className="bog-sultan" onClick={() => {Scroll2()}}>
             <div className="img-sultan">
                 <img src={require("./assets/sultan_nazrin.png")} alt="Royal Patreon"/>
                 <h1>His Royal Highness, Sultan Nazrin Muizzudin Shah</h1>
                 <h4>Royal Patron</h4>
             </div>
-            <Arrow onClick={() => ScrollToSection("cm")}/>
+            <Arrow onClick={() => {Scroll2()}} />
+            <Arrow onClick={() => ScrollToSection("cm")} id='arrow1' className="bog-arrow" onMouseDown={() => {hidden()}}/>
         </div>
 
         
@@ -30,7 +39,7 @@ export const Bog = () => {
                 <h1>Tun Mohammed Hanif bin Omar</h1>
                 <h4>Chairman</h4>
             </div>
-            <Arrow onClick={() => ScrollToSection("grid")}/>
+            <Arrow onClick={() => ScrollToSection("grid")} className="bog-arrow" onScrollCapture={() => {hidden()}}/>
         </div>
           
         <div>
@@ -86,7 +95,7 @@ export const Bog = () => {
                     </Col>
 
                 </Row>
-                <Arrow onClick={() => ScrollToSection("grid2")}/>
+                <Arrow onClick={() => ScrollToSection("grid2")} className="bog-arrow"/>
             </div>
 
             <div className="bog-grid" id="grid2">
