@@ -54,6 +54,9 @@ export const NavBar = () => {
                                 <NavDropdown.Item as={Link} to="/Graduation">
                                     Graduation
                                 </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Student">
+                                    Achievement
+                                </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav>

@@ -4,7 +4,7 @@ import './styles.css'
 
 export const Achievement = () => {
     return (<>
-    <div className="achieve-cont">
+    <div className="achieve-cont" id="Achievement">
         <div className="achieve-div">
             <h1>Our Achievement</h1>
             <img src={require("./Result 2022.jpeg")} alt="Achievements" className="img" width='90%'/>

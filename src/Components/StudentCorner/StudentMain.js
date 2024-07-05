@@ -16,7 +16,7 @@ export const StudentMain =()=> {
             <Tab eventKey={Activities} title='Activities'>
                 <Activities/>
             </Tab>
-            <Tab eventKey={Achievement} title='Achievements'>
+            <Tab eventKey={Achievement} title='Achievements' >
                 <Achievement/>
             </Tab>
         </Tabs>
