@@ -4,8 +4,18 @@
     width: 50%;
     height: auto;
     margin: auto;
+    animation: fade 4s linear;
 }
 
 .main-container {
    background-color: #8BADDE;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
