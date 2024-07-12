@@ -79,8 +79,8 @@ export const Admission = () => {
             </Modal.Header>
 
             <Modal.Body>
-                <iframe src={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} width='100%'>
-                </iframe>
+                <object data={("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} type="application/pdf" width='100%' height='100%'>
+                </object>
             </Modal.Body>
         </Modal>
     </div>
