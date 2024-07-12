@@ -1,0 +1,8 @@
+.act-cont {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    padding: 2em;
+    width: 60vw;
+    margin: auto;
+}

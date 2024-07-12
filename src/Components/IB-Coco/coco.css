@@ -1,9 +1,10 @@
 #coco {
     top: 10%;
+    left : 5%;
     width: 1%;
-    position: fixed;
+    position: relative;
     display: block;
-    height: 100vh;
+    height: auto;
 }
 
 .coco-sidebar button{

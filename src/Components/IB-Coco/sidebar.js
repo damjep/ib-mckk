@@ -2,12 +2,15 @@ import { useState } from "react"
 import "./coco.css"
 import { Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {BiMenu} from '@react-icons/all-files/bi/BiMenu'
 
 export const SideBar = () => {
     const [show, setShow] = useState(false);
 
     return(<>
-        <span id="coco" onMouseEnter={() => setShow(true)}></span>
+        <span id="coco" onMouseEnter={() => setShow(true)}>
+            <BiMenu height='20px' />
+        </span>
 
         <div >
             <Offcanvas show={show} onHide={() => setShow(!show)}>

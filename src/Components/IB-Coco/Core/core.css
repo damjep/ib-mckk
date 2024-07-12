@@ -1,6 +1,8 @@
 .core-main {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    justify-content: center;
 }
 
 .core-main video {
@@ -12,4 +14,12 @@
     margin: 1em;
     flex: auto;
     max-width:45vw;
+}
+
+.core-cont {
+    padding: 2em;
+    min-height: 90vh;
+    justify-content: center;
+    text-align: center;
+    
 }

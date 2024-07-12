@@ -1,8 +1,10 @@
 import { Accordion, Carousel } from "react-bootstrap"
+import './styles.css';
 
 export const Activities = () => {
+
     return (<>
-    <div>
+    <div className="act-cont">
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
@@ -37,5 +39,6 @@ export const Activities = () => {
             </Accordion.Item>
         </Accordion>
     </div>
+
     </>)
 }

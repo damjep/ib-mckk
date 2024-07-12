@@ -26,6 +26,8 @@ import { Graduation } from './Components/StudentCorner/Graduation/Graduation';
 
 
 function App() {
+  document.title = "IBDP MCKK"
+  
   return (<>
     <div className="App">
       <div>
@@ -58,7 +60,7 @@ function App() {
             <Route path='/Student' element={<StudentMain/>} />
             <Route path='/Facilities' element={<Facilities/>} />
             <Route path='/Activities' element={<Activities/>} />
-            <Route path='/Achievement' element={<Achievement/>} />
+            <Route path='/Student' element={<Achievement/>} />
             <Route path='/Graduation' element={<Graduation/>} />
 
             {/** Contact */}

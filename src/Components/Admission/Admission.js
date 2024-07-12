@@ -2,11 +2,19 @@ import { Container, Row, Col, ListGroup, Accordion } from "react-bootstrap"
 import { Modal } from "react-bootstrap"
 import './styles.css'
 import { useState } from "react"
+import { Viewer } from "@react-pdf-viewer/core"
+import { Worker } from "@react-pdf-viewer/core"
+import { ScrollMode } from "@react-pdf-viewer/core"
+import { SpecialZoomLevel } from "@react-pdf-viewer/core"
 
 export const Admission = () => {
     const [show, setShow] = useState(false)
     const handleClose = () => setShow(false)
     const handleOpen = () => setShow(true)
+
+    const [show2, setShow2] = useState(false)
+    const handleClose2 = () => setShow2(false)
+    const handleOpen2 = () => setShow2(true)
 
     return (<>
     <div className="admis-cont">
@@ -63,24 +71,50 @@ export const Admission = () => {
         
         <div className="admis-button">
             <button  title="PDF" onClick={handleOpen}>
+                View Application Form
             </button>
-            <button  title="PDF">
-                <a href={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} > Apply Now ! </a>
-            </button>
-            <button title="Prospectus">
-                <a href={require("./Prospectus April 2020.pdf")} > View Our Prospectus </a>
+            
+            <button title="Prospectus" onClick={handleOpen2}>
+            View Our Prospectus 
             </button>
         </div>
         
 
         <Modal size="lg" show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header closeButton >
                 <Modal.Title> Apply by Downloading and Fill the PDF</Modal.Title>
+                <Modal.Body>
+                    <button  title="PDF">
+                        <a href={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} target="_blank" rel="noreferrer"> Download </a>
+                    </button>
+                </Modal.Body>
             </Modal.Header>
 
             <Modal.Body>
-                <object data={("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} type="application/pdf" width='100%' height='100%'>
-                </object>
+                <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
+                    <Viewer fileUrl={require("./IBDP_MCKK_Application_Form_(FILLABLE).pdf")} 
+                    defaultScale={SpecialZoomLevel.PageFit} scrollMode={ScrollMode.Vertical} pageLayout={'pageIndex'}
+                    />
+                </Worker>
+            </Modal.Body>
+        </Modal>
+
+        <Modal size="lg" show={show2} onHide={handleClose2}>
+            <Modal.Header closeButton >
+                <Modal.Title> IBDP MCKK Prospectus</Modal.Title>
+                <Modal.Body>
+                    <button title="Prospectus">
+                        <a href={require("./Prospectus April 2020.pdf")} target="_blank" rel="noreferrer">Download</a>
+                    </button>
+                </Modal.Body>
+            </Modal.Header>
+
+            <Modal.Body>
+                <Worker workerUrl='https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js'>
+                    <Viewer fileUrl={require("./Prospectus April 2020.pdf")} 
+                    defaultScale={SpecialZoomLevel.PageFit} scrollMode={ScrollMode.Vertical}
+                    />
+                </Worker>
             </Modal.Body>
         </Modal>
     </div>

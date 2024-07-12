@@ -4,6 +4,23 @@
     display: flex;
 }
 
+.text-blue {
+    border: #141E46 solid 1px;
+    height: 4em;
+    width: 40em;
+    text-align: center;
+    border-radius: 2em;
+    background-color: #141E46;
+    color: white;
+    margin: 0.5em;
+    display: flex;
+}
+
+.text-blue h1 {
+    margin: auto;
+    
+}
+
 .t-2 {
     min-width: auto;
     min-height: 100vh;
@@ -11,3 +28,49 @@
     flex-direction: column;
 }
 
+.sideinfo {
+    position: absolute;
+    left: 1.5em;
+    top: 1.5em;
+    width: auto;
+    background-color: #F3F0EC;
+    padding: 1em;
+}
+
+.sideinfo a {
+    color: black;
+    text-align: left;
+}
+
+.sideinfo-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.sideinfo-modal div {
+    flex: auto;
+    display: flex;
+}
+
+.sideinfo-modal div img {
+    margin: auto;
+}
+
+.sideinfo-subject {
+    display: flex;
+    gap: 2em;
+}
+
+.sideinfo-subject p {
+    flex: auto;
+    margin: auto;
+}
+
+.sideinfo-modal a {
+    color: black;
+}
+
+.t-1 a {
+    color: black;
+}
