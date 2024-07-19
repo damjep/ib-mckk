@@ -5,12 +5,16 @@ import './subjects.css'
 export const Subject = () => {
     return(<>
     <SideBar />
-    <div className="subjects-container">
-        <C10 />
-        <SubjectGroup />
+
+    <div className="w-100 h-75 d-flex flex-column mb-3">
+        <div className="subjects-container d-flex flex-column flex-sm-row h-75">
+            <C10/>
+            <SubjectGroup />
+        </div>
+    
+        <Subjects />
     </div>
-   
-    <Subjects />
+    
     </>)
 }
 
@@ -40,8 +44,8 @@ const SubjectGroup = () => {
 
 const C10 = () => {
     return (<>
-    <div className="subjects-div">
-        <Image src={require("./C10 - 2.JPG")} alt="C10" fluid/>
+    <div className="subjects-div w-100">
+        <Image src={require("./C10 - 2.JPG")} alt="C10" fluid className="w-100"/>
     </div>
     </>)
 }
@@ -50,13 +54,13 @@ const Subjects = () => {
     return (<>
     <h1>Subjects We Offer</h1>
     
-    <div className="subjects-main">
-        <Card className="subjects-card">
+    <div className="subjects-main w-100 d-flex flex-column flex-sm-row m-3 w-auto h-auto">
+        <Card className="subjects-card w-100 h-100">
             <Card.Header>
             Studies in Language and Literature
             </Card.Header>
-            <Card.Body>
-                <Accordion>
+            <Card.Body className="h-100">
+                <Accordion >
                     <Accordion.Item eventKey="1">
                         <Accordion.Header>
                             Malay A Literature ( SL ) 
@@ -69,7 +73,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card className="subjects-card">
+        <Card className="subjects-card w-100 h-100">
             <Card.Header>
                 Languae Acquisition
             </Card.Header>
@@ -87,7 +91,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card className="subjects-card">
+        <Card className="subjects-card w-100 h-auto">
             <Card.Header>
                 Individual and Societies
             </Card.Header>
@@ -128,8 +132,8 @@ const Subjects = () => {
         </Card>
     </div>
 
-    <div className="subjects-main">
-        <Card className="subjects-card">
+    <div className="subjects-main w-100 d-flex flex-column flex-sm-row m-3 w-auto h-auto">
+        <Card className="subjects-card w-100 h-auto">
             <Card.Header>
                 Sciences
             </Card.Header>
@@ -180,7 +184,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card className="subjects-card">
+        <Card className="subjects-card w-100 h-auto">
             <Card.Header>
                 Mathematics
             </Card.Header>
@@ -198,7 +202,7 @@ const Subjects = () => {
             </Card.Body>
         </Card>
 
-        <Card className="subjects-card">
+        <Card className="subjects-card w-100 h-auto">
             <Card.Header>
                 The Arts
             </Card.Header>

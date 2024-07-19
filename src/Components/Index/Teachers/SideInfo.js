@@ -17,14 +17,14 @@ export default function SideInfo () {
     }
 
     return ( <>
-        <div className="sideinfo">
-            <h4>Staff Directory Quick Guide</h4>
+        <div className="d-flex flex-column">
+            <h4 className="text-center">Staff Directory Quick Guide</h4>
             <p>
-                <ul>
+                <ul className="d-flex flex-row overflow-x-auto flex-sm-column">
                     {TeacherName && TeacherName.map((item, index) => {
                         return (<>
-                            <li key={index}>
-                                <button onClick={() => {handleShow(index)}}>
+                            <li key={index} style={{listStyle: 'none'}}>
+                                <button onClick={() => {handleShow(index)}} className="h-100 w-100">
                                     {item.name}
                                 </button>
                                  
@@ -36,7 +36,7 @@ export default function SideInfo () {
                                 </Modal.Header>
                                 <Modal.Body className="sideinfo-modal">
                                     <div>
-                                        <img src={item.image} alt={item.name} />
+                                        <img src={item.image} alt={item.name} className="w-100"/>
                                     </div>
                                     <div>
                                         <p>

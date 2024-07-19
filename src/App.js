@@ -29,7 +29,7 @@ function App() {
   document.title = "IBDP MCKK"
   
   return (<>
-    <div className="App">
+    <div className="min-vh-75">
       <div>
         <Routes>
             {/**Home */}

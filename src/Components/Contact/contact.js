@@ -7,7 +7,7 @@ import { Resend } from "resend";
 export const Contact = () =>{
     return (<>
     <Container>
-        <Row className="contact-cont">
+        <Row className="contact-cont w-100 d-flex flex-column flex-sm-row">
             <Col className="contact-div">
                 <GoogleMap />
             </Col>
@@ -35,18 +35,18 @@ function FormContact () {
     }
 
     return (<>
-        <Form>
-            <Form.Group>
+        <Form className="w-100 d-flex flex-column gap-2"> 
+            <Form.Group className="w-100">
                 <Form.Label>Email us for a faster response !</Form.Label>
-                <Form.Control type="email" placeholder="email@example.com" onChange={(e) => {setEmail(e.target.value)}} isValid={email.includes("@")} isInvalid={!email.includes("@")}/>
+                <Form.Control className="w-100" type="email" placeholder="email@example.com" onChange={(e) => {setEmail(e.target.value)}} isValid={email.includes("@")} isInvalid={!email.includes("@")}/>
                 {email}
             </Form.Group>
             <Form.Group>
-                <Form.Control as="textarea" rows={3} placeholder="Enter message" onChange={(e) => {setMessage(e.target.value)}}/>
+                <Form.Control className="w-100" as="textarea" rows={3} placeholder="Enter message" onChange={(e) => {setMessage(e.target.value)}}/>
                 {message}
             </Form.Group>
             <Form.Group>
-                <Button type="submit" onSubmit={sendEmail}>Submit</Button>
+                <Button type="submit" onSubmit={sendEmail} >Submit</Button>
             </Form.Group>
         </Form>
     </>)

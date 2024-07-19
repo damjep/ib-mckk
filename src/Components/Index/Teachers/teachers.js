@@ -4,15 +4,19 @@ import SideInfo from "./SideInfo"
 
 export const Teacher = () => {
     return (<>
-    <div>
+    <h4>Teachers</h4>
+
+    <div className="w-100 h-100 d-flex flex-column gap-2 flex-sm-row mt-3">
+        
         <SideInfo />
-        <Container>
-            <h4>Teachers</h4>
-            <Row>
-                <Col>
-                    <div className="t-1">
+
+        <Container className="d-flex ">
+            
+            <Row className="d-flex flex-column m-auto">
+                <Col className="d-flex flex-column m-auto">
+                    <div className="h-auto d-flex flex-column">
                         <img src={require("./assets/NORSAFALIZA IBRAHIM.jpg")} alt="Teachers" width={"255px"} height={"277px"}/>
-                        <span className="text-blue">
+                        <span className="text-blue w-100 h-auto">
                             <h1>Norsafaliza Ibrahim</h1>
                         </span>
                         

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f8a5fff.css",
-    "main.js": "/static/js/main.b931bd5e.js",
+    "main.css": "/static/css/main.850db09d.css",
+    "main.js": "/static/js/main.2d573bed.js",
     "static/js/453.0dd7517d.chunk.js": "/static/js/453.0dd7517d.chunk.js",
     "static/media/Prospectus April 2020.pdf": "/static/media/Prospectus April 2020.89a4ffc17bb3782e76ca.pdf",
     "static/media/counselling_1.mp4": "/static/media/counselling_1.3fb640dc148cfbeb4b2c.mp4",
@@ -106,12 +106,12 @@
     "static/media/asyraf.jpg": "/static/media/asyraf.27634fcef22f13994949.jpg",
     "static/media/natsir.jpg": "/static/media/natsir.8b0425249982e96837dc.jpg",
     "index.html": "/index.html",
-    "main.7f8a5fff.css.map": "/static/css/main.7f8a5fff.css.map",
-    "main.b931bd5e.js.map": "/static/js/main.b931bd5e.js.map",
+    "main.850db09d.css.map": "/static/css/main.850db09d.css.map",
+    "main.2d573bed.js.map": "/static/js/main.2d573bed.js.map",
     "453.0dd7517d.chunk.js.map": "/static/js/453.0dd7517d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f8a5fff.css",
-    "static/js/main.b931bd5e.js"
+    "static/css/main.850db09d.css",
+    "static/js/main.2d573bed.js"
   ]
 }

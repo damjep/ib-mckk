@@ -5,7 +5,7 @@ import './assessment.css'
 export const Assessment = () => {
     return (<>
     <SideBar/>
-    <div className="ass-cont">
+    <div className="ass-cont d-flex flex-column">
         <div className="ass-main">
             <Card className="ass-div">
                 <Card.Header>
@@ -17,8 +17,8 @@ export const Assessment = () => {
                 </p></Card.Body>
             </Card>
         </div>
-        <div className="ass-main">
-            <Card className="ass-div">
+        <div className="ass-main d-flex flex-column flex-sm-row w-100">
+            <Card className="ass-div w-100">
                 <Card.Header>
                     <Card.Title>
                         Grade Description
@@ -26,11 +26,11 @@ export const Assessment = () => {
                 </Card.Header>
                 <Card.Body>
                     
-                    <Card.Img src={require("./grade.jpg")} />
+                    <Card.Img src={require("./grade.jpg")} className="h-100"/>
                 </Card.Body>
             </Card>
 
-            <Card className="ass-div">
+            <Card className="ass-div w-100">
                 <Card.Header>
                 <Card.Title>Core Point Matrix</Card.Title>
                     

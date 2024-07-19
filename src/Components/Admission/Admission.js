@@ -17,18 +17,19 @@ export const Admission = () => {
     const handleOpen2 = () => setShow2(true)
 
     return (<>
-    <div className="admis-cont">
-        <Container className="admission">
-            <Row className="admission-div">
+    <div className="admis-cont mt-3 mb-3">
+        <Container className="admission  d-flex flex-column flex-sm-row w-100 mb-3">
+            <Row className="admission-div w-100">
                 <Col>
                 <div>
                     <h1>Why Should You Choose Us?</h1>
-                    <p style={{textAlign: 'left'}}>The International Baccalaureate Diploma Programme (IBDP) at the Malay College Kuala Kangsar (MCKK) offers a comprehensive curriculum package that develops academic potentials as well as personal and social attributes of our students. The programme allows a maximum flexibility and students can play to their strengths while maintaining a balance of subjects taken.</p>
-                    <ListGroup className="admis-group">
-                        <ListGroup.Item>Internationally trained academic members</ListGroup.Item>
-                        <ListGroup.Item> IBDP graduates are more likely to be enrolled at top higher education institutions than entrants holding other qualifications</ListGroup.Item>
-                        <ListGroup.Item> Strong international links and global partnerships </ListGroup.Item>
-                        <ListGroup.Item>The 1st school under the Ministry of Education to be certified as an IB World School</ListGroup.Item>
+                    <p style={{textAlign: 'left'}} className="w-100">The International Baccalaureate Diploma Programme (IBDP) at the Malay College Kuala Kangsar (MCKK) offers a comprehensive curriculum package that develops academic potentials as well as personal and social attributes of our students. The programme allows a maximum flexibility and students can play to their strengths while maintaining a balance of subjects taken.</p>
+                    <ListGroup className="w-100">
+                        <ListGroup.Item className="w-100">Internationally trained academic members</ListGroup.Item>
+                        <ListGroup.Item className="w-100"> IBDP graduates are more likely to be enrolled at top higher education institutions than entrants holding other qualifications</ListGroup.Item>
+                        <ListGroup.Item className="w-100"> IBDP graduates are more likely to be enrolled at top higher education institutions than entrants holding other qualifications</ListGroup.Item>
+                        <ListGroup.Item className="w-100"> Strong international links and global partnerships </ListGroup.Item>
+                        <ListGroup.Item className="w-100"> The 1st school under the Ministry of Education to be certified as an IB World School</ListGroup.Item>
                     </ListGroup>
                 </div>
                 </Col>
@@ -69,12 +70,12 @@ export const Admission = () => {
             
         </Container>
         
-        <div className="admis-button">
-            <button  title="PDF" onClick={handleOpen}>
+        <div className="admis-button d-flex flex-column flex-sm-row">
+            <button  title="PDF" onClick={handleOpen} className="w-75">
                 View Application Form
             </button>
             
-            <button title="Prospectus" onClick={handleOpen2}>
+            <button title="Prospectus" onClick={handleOpen2} className="w-75">
             View Our Prospectus 
             </button>
         </div>

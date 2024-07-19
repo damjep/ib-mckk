@@ -4,13 +4,13 @@ import './styles.css'
 
 export const Achievement = () => {
     return (<>
-    <div className="achieve-cont" id="Achievement">
-        <div className="achieve-div">
+    <div className="achieve-cont d-flex flex-column flex-sm-row w-100 mt-5 min-vh-50" id="Achievement">
+        <div className="achieve-div d-flex flex-column w-100">
             <h1>Our Achievement</h1>
-            <img src={require("./Result 2022.jpeg")} alt="Achievements" className="img" width='90%'/>
+            <img src={require("./Result 2022.jpeg")} alt="Achievements" className="img w-100" width='90%'/>
         </div>
 
-        <div className="achieve-div">
+        <div className="achieve-div d-flex flex-column w-100">
             <HighAchievers />
         </div>
     </div>

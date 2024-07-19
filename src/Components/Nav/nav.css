@@ -1,3 +1,17 @@
 #test {
     background-color: black;
 }
+
+#hover {
+    min-width: 10em;
+    width: auto;
+    height: auto;
+    margin: 0.5em;
+    --bw: inherit;
+}
+
+#hover:hover {
+    background-color: rgba(156, 150, 150, 0.884);
+    border-radius: 1em;
+    border-width: calc(var(--bw)+1em);
+}

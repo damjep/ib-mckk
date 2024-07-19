@@ -12,7 +12,7 @@ export const SideBar = () => {
             <BiMenu height='20px' />
         </span>
 
-        <div >
+        <div className="w-100">
             <Offcanvas show={show} onHide={() => setShow(!show)}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>
@@ -21,43 +21,43 @@ export const SideBar = () => {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="coco-sidebar">
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/About">
                             About Us
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}> 
                         <Link to="/LearnerProfile">
                             Learner Profile
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/Core">
                             IB Core
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/Subject">
                             What do we study?
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/Schedule">
                             Student Schedule
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/Calendar">
                             Calendar
                         </Link>
                     </button>
 
-                    <button>
+                    <button onClick={() => setShow(!show)}>
                         <Link to="/Assessment">
                             Assessment
                         </Link>

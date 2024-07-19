@@ -3,7 +3,7 @@ import '../styles.css'
 
 export const Guide = () => {
     return (<>
-    <div>
+    <div className="d-flex flex-column mt-3">
 
         <div className="support">
              <h1>University Guide</h1>
@@ -13,8 +13,8 @@ export const Guide = () => {
         </div>
        
 
-        <div className="support-main">
-            <Accordion className="support-div">
+        <div className="support-main d-flex flex-column flex-sm-row">
+            <Accordion className="w-100">
                 <Accordion.Item>
                     <Accordion.Header>
                         PDF Documentation
@@ -25,7 +25,7 @@ export const Guide = () => {
                 </Accordion.Item>
             </Accordion>
 
-            <Accordion className="support-div">
+            <Accordion className="w-100">
                 <Accordion.Item>
                     <Accordion.Header>
                         IB With University Application
@@ -33,7 +33,7 @@ export const Guide = () => {
                     <Accordion.Body>
                     How students should discuss their IB results with university application ?
                     <Accordion.Body>
-                        <video src={require("./counselling_2.mp4")} controls width={"60%"}/>    
+                        <video src={require("./counselling_2.mp4")} controls className="w-100"/>    
                     </Accordion.Body>
                     </Accordion.Body>
                 </Accordion.Item>

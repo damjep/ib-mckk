@@ -5,11 +5,11 @@ import "./core.css"
 export const Core = () => {
     return (<>
     <SideBar />
-    <div className="core-cont">
-         <div className="core-main">
-            <Card className="core-div">
+    <div className="core-cont d-flex flex-column gap-3">
+         <div className="core-main d-flex flex-column flex-sm-row gap-3">
+            <Card className="w-100">
                 <Card.Header>
-                    <video src={require("./assets/tok.mp4")} controls > </video>
+                    <video src={require("./assets/tok.mp4")} controls className="w-100"> </video>
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>Theory Of Knowledge</Card.Title>
@@ -19,9 +19,9 @@ export const Core = () => {
                 </Card.Body>
             </Card>
 
-            <Card className="core-div">
+            <Card className="w-100">
                 <Card.Header>
-                    <video src={require("./assets/ee.mp4")} controls />
+                    <video src={require("./assets/ee.mp4")} controls className="w-100"/>
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>The Extended Essay</Card.Title>
@@ -31,10 +31,10 @@ export const Core = () => {
                 </Card.Body>
             </Card>
         </div>
-        <div className="core-main">
-            <Card className="core-div">
+        <div className="w-100 d-flex flex-column m-auto">
+            <Card className="w-auto d-flex flex-column">
                 <Card.Header>
-                    <video src={require("./assets/cas.mp4")} controls/>
+                    <video src={require("./assets/cas.mp4")} controls className="w-100"/>
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>CAS</Card.Title>
