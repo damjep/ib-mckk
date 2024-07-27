@@ -4,8 +4,8 @@ import "./coco.css"
 export const IbCoco = () => {
     return (<>
     <SideBar/>
-    <div className="ibcoco-main d-flex flex-column gap-3">
-        <div style={{flex: 'auto', justifyContent: 'center', height: 'auto', display: 'flex', maxHeight: '45vh', margin: '2em'}} className="m-auto ibcoco-img-container">
+    <div className="ibcoco-main d-flex flex-column gap-5">
+        <div className="m-auto h-100 ibcoco-img-container">
             <img src={require("./ibdp.png")} alt="IB" className="ibcoco-img w-100 h-auto m-auto"/>
         </div>
         

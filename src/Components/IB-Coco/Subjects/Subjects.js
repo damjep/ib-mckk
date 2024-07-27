@@ -52,9 +52,12 @@ const C10 = () => {
 
 const Subjects = () => {
     return (<>
-    <h1>Subjects We Offer</h1>
+
+    <h1 className="m-auto">Subjects We Offer</h1>
     
     <div className="subjects-main w-100 d-flex flex-column flex-sm-row m-3 w-auto h-auto">
+
+        
         <Card className="subjects-card w-100 h-100">
             <Card.Header>
             Studies in Language and Literature
